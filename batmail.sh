@@ -58,4 +58,4 @@ mailx -v \
     -S smtp-auth-password=$PASSWORD \
     -S ssl-verify=ignore \
     -S nss-config-dir=~/.certs \
-    $*
+    "$@"
