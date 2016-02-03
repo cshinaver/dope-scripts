@@ -5,9 +5,9 @@
 # After running, it will expect you to type in the text for the email
 # In order to signal end of email, hit ctrl-d
 
-FULL_NAME="John Cena"
-EMAIL_ADDRESS="jcenabuhduhduhduuuuh@nd.edu"
-PASSWORD=jlawislife
+[ ! -z "$FULL_NAME" ] || FULL_NAME="John Cena"
+[ ! -z "$EMAIL_ADDRESS" ] || EMAIL_ADDRESS="jcenabuhduhduhduuuuh@nd.edu"
+[ ! -z "$PASSWORD" ] || PASSWORD=jlawislife
 
 # Check for password change
 if [ "$EMAIL_ADDRESS" == "jcenabuhduhduhduuuuh@nd.edu" ]
