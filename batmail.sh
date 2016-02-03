@@ -1,5 +1,5 @@
 #!/bin/bash
-# Screwed with by Charles Shinaver
+# Messed with by Charles Shinaver
 # Bastardization of mailx that works with gmail.
 # Make sure to put in your password in order for it to work
 # After running, it will expect you to type in the text for the email
@@ -21,7 +21,7 @@ fi
 # Usage
 if [ $# == 0 ]
 then
-    mailx -h 2>&1 | sed 's/mailx/batmail/g' # lol i'm an asshole
+    mailx -h 2>&1 | sed 's/mailx/batmail/g' # lol i'm the worst
     echo ""
     echo "Example: ./batmail.sh -s \"Super cool email thing\" -a filetoattach recipient@whatever.com"
     exit 1
